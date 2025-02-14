@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Mega Harvest International - Home</title>
+  <meta name="description" content="Mega Harvest International - Transforming lives through the power of the Gospel">
+  <meta name="keywords" content="revival, crusade, healing, deliverance, christian ministry">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <style>
+    /* Additional Styles */
+    :root {
+      --primary-color: #e74c3c;
+      --secondary-color: #2c3e50;
+      --accent-color: #f1c40f;
+      --text-dark: #2c3e50;
+      --text-light: #ecf0f1;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background: var(--text-light);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    }
+
+    .hero .carousel-item {
+      height: 100vh;
+    }
+
+    .hero .carousel-item img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .countdown-timer {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0,0,0,0.7);
+      padding: 20px 40px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .countdown-item {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .countdown-item span {
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+
+    .give-now-cta {
+      background: var(--primary-color);
+      padding: 40px 0;
+      text-align: center;
+      color: white;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .testimonial-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      .countdown-item span {
+        font-size: 1.8em;
+      }
+      
+      .hero {
+        height: 70vh;
+      }
+    }
+
+    .soul-counter {
+      background: var(--secondary-color);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .soul-counter h2 {
+      font-size: 3.5em;
+      font-weight: 700;
+    }
+
+    .fixed-countdown {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      z-index: 1000;
+    }
+
+    .meetings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px 0;
+    }
+
+    .meeting-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .meeting-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Updated Navigation -->
+  <header class="header sticky-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Mega Harvest Logo" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="crusades.html">Crusades</a></li>
+            <li class="nav-item"><a class="nav-link" href="books.html">Books</a></li>
+            <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+            <li class="nav-item"><a class="nav-link" href="testimonies.html">Testimonies</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-danger" href="give.html">Give Now</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/rehoboth.jpeg" class="d-block w-100" alt="Crusade Event">
+          <div class="carousel-caption">
+            <h2>Global Revival Crusade</h2>
+            <a href="crusades.html" class="btn btn-primary btn-lg">Join Now</a>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" class="d-block w-100" alt="Crusade Event">
+          <div class="carousel-caption">
+            <h2>Global Revival Crusade</h2>
+            <a href="crusades.html" class="btn btn-primary btn-lg">Join Now</a>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" class="d-block w-100" alt="Crusade Event">
+          <div class="carousel-caption">
+            <h2>Global Revival Crusade</h2>
+            <a href="crusades.html" class="btn btn-primary btn-lg">Join Now</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+  <!-- Soul Counter Section -->
+  <section class="soul-counter">
+    <div class="container">
+      <h2 id="soulCount">0</h2>
+      <p>Souls Won for Christ Since 2019</p>
+    </div>
+  </section>
+
+  <!-- Fixed Countdown -->
+  <div class="fixed-countdown">
+    <div class="countdown">
+      <div class="countdown-item">
+        <span id="fixedDays">00</span><small>d</small>
+      </div>
+      <div class="countdown-item">
+        <span id="fixedHours">00</span><small>h</small>
+      </div>
+      <div class="countdown-item">
+        <span id="fixedMinutes">00</span><small>m</small>
+      </div>
+    </div>
+    <small>Next Crusade</small>
+  </div>
+
+  <!-- Upcoming Meetings Section -->
+  <section class="meetings-section">
+    <div class="container">
+      <h2 class="text-center mb-5 mt-5">Upcoming Meetings</h2>
+      <div class="meetings-grid">
+        <div class="meeting-card">
+          <h3>Holy Ghost Festival Ghana</h3>
+          <p class="text-muted">Date: 15-18 October 2024</p>
+          <p class="text-muted">Time: 5:00 PM Daily</p>
+          <p>📍 Independence Square, Accra</p>
+          <a href="bookings.html" class="btn btn-primary">Register Now</a>
+        </div>
+        <div class="meeting-card">
+          <h3>Prayer Of Faith</h3>
+          <p class="text-muted">Date: 15-18 October 2024</p>
+          <p class="text-muted">Time: 5:00 PM Daily</p>
+          <p>📍 Dallas, Texas</p>
+          <a href="bookings.html" class="btn btn-primary">Register Now</a>
+        </div>
+
+        <div class="meeting-card">
+          <h3>Great Awakening Crusade</h3>
+          <p class="text-muted">Date: 15-18 October 2024</p>
+          <p class="text-muted">Time: 5:00 PM Daily</p>
+          <p>📍 Akure, Nigeria</p>
+          <a href="bookings.html" class="btn btn-primary">Register Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="give-now-cta">
+    <div class="container">
+      <h2>Partner With Us in Ministry</h2>
+      <p>Your support helps spread the Gospel worldwide</p>
+      <a href="give.html" class="btn btn-light btn-lg">Give Now</a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Recent Testimonies</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"I was healed of cancer during the Lagos crusade! Glory to God!"</p>
+          <h5>- John D.</h5>
+        </div>
+        <!-- Add more testimonial cards -->
+      </div>
+      <div class="text-center mt-4">
+        <a href="testimonies.html" class="btn btn-primary">View More Testimonies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Contact Us</h4>
+          <p>Email: info@megaharvest.org<br>
+          Phone: +234 812 345 6789</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Quick Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="crusades.html">Upcoming Events</a></li>
+            <li><a href="give.html">Online Giving</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Countdown Timer
+    const countDownDate = new Date("2024-12-31T00:00:00").getTime();
+
+    const timer = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <script>
+    // Soul Counter Animation
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.textContent = Math.floor(progress * (end - start) + start).toLocaleString();
+        if (progress < 1) window.requestAnimationFrame(step);
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    // Start soul counter when visible
+    const soulCount = document.getElementById('soulCount');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateValue(soulCount, 0, 141244, 2500);
+        }
+      });
+    });
+    observer.observe(soulCount);
+
+    // Fixed Countdown Timer
+    function updateFixedCountdown() {
+      const countDownDate = new Date("2024-12-31T00:00:00").getTime();
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+      document.getElementById("fixedDays").textContent = days;
+      document.getElementById("fixedHours").textContent = hours;
+      document.getElementById("fixedMinutes").textContent = minutes;
+    }
+
+    // Update countdown every minute
+    setInterval(updateFixedCountdown, 60000);
+    updateFixedCountdown(); // Initial call
+  </script>
+
+</body>
+</html>
